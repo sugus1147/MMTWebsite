@@ -1,0 +1,160 @@
+/* สำหรับภาพใน Carousel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+/* สำหรับภาพในการ์ด */
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* การตั้งค่าแบบ responsive สำหรับการ์ดใน Album */
+.card-body {
+    padding: 1rem;
+}
+
+/* การตั้งค่าสีพื้นหลังและข้อความสำหรับ Carousel */
+#personalCarousel {
+    background-color: #1b1b1b86;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #ffffff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #646464fd;
+}
+
+/* การตั้งค่าสีพื้นหลังและข้อความสำหรับ Card */
+.card {
+    background-color: #66666685;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(10, 10, 10, 0.1);
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-text {
+    color: #f7f3f3;
+}
+
+/* ปุ่ม */
+.btn-outline-secondary {
+    border-color: #ff5733;
+    color: #ff5733;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #ff5733;
+    color: #fff;
+}
+
+/* Personal Info Row */
+.personal-info-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Personal Info Box */
+.personal-info-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personal-info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #080808;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* สีข้อความใน Navbar */
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #000000;
+}
+
+.navbar-nav .nav-link.active {
+    color: #020202;
+}
+
+/* กรณี responsive */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px;
+    }
+
+    .card img {
+        max-height: 120px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        background-color: #ffffff;
+        border-bottom: none;
+    }
+
+    .navbar-toggler {
+        background-color: #ffffff91;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-color: white;
+    }
+
+    .navbar-collapse.show {
+        background-color: #ffffffce;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        max-height: 250px;
+    }
+
+    .card-body {
+        padding: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        border: 2px solid #33ccff;
+    }
+}
