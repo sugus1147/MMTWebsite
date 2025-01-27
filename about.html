@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Multimedia Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Multimedia Technology</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- about.html -->
+    <body class="about-page">
+    <!-- About Section -->
+    <div class="container mt-5">
+        <h1 class="text-center">About the Multimedia Technology Program</h1>
+        <p class="text-center">หลักสูตรมัลติมีเดียเป็นหลักสูตรที่ผสมผสานเทคโนโลยีและศิลปะเพื่อสร้างสรรค์งานในยุคดิจิทัล</p>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="about2.jpg" class="img-fluid rounded" alt="Multimedia">
+            </div>
+            <div class="col-md-6">
+                <h2>เป้าหมายของหลักสูตร</h2>
+                <p>
+                    มุ่งผลิตบัณฑิตนักปฏิบัติที่สามารถสร้างนวัฒกรรมและมีความเป็นนานาชาติเพื่อ
+                    รองรับการแปลี่ยนแปลงขอฃโลกยุคใหม่เพื่อพัฒนาประเทศอย่างยั่งยืน
+                </p>
+                <h3>วิชาหลัก (Hi-light):</h3>
+                <ul>
+                    <li>คอมพิวเตอร์กราฟิก</li>
+                    <li>เทคโนโลยีการถ่ายภาพดิจิทัล</li>
+                    <li>เทคโนโลยีการผลิตภาพเคลื่อนไหว</li>
+                    <li>การพัฒนาสื่อโดยใช้เทคโนโลยีเสมือนจริง-การทำเกม และ VR</li>
+                </ul>
+                <h3>อาชีพที่สามารถประกอบได้หลังสำเร็จการศึกษา:</h3>
+                <ul>
+                    <li>นักพัฒนาสื่อมัลติมีเดีย</li>
+                    <li>นักออกแบบคอมพิวเตอร์กราฟิก</li>
+                    <li>นักสร้างภาพเคลื่อนไหว</li>
+                    <li>นักพัฒนาสื่อปฏิสัมพันธ์และเว็บไซต์</li>
+                    <li>นักพัฒนาเกมและสื่อเสมือนจริง</li>
+                    <li>ผู้ประกอบการด้านมัลติมีเดีย</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top Button -->
+<button id="backToTop" class="btn btn-primary" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000; border-radius: 50%;">
+    ↑
+</button>
+
+<script>
+    // Get the button
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Show or hide the button based on scroll position
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Scroll to top when button is clicked
+    backToTopButton.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
+
+</body>
+
+</html>
