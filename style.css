@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
 /* สำหรับภาพใน Carousel */
 .carousel-item img {
     width: 100%;
@@ -273,10 +272,10 @@ form button:hover {
 }
 /* ตกแต่งcss about */
 body.about-page {
-    font-family: "Playfair Display", serif;
+    font-family: "Sriracha", serif;
 }
 h2,h3 {
-    font-family: "Anuphan", serif;
+    font-family: "Sriracha", serif;
     position: relative;
 }
 p{
@@ -284,7 +283,7 @@ p{
 }
 /* ตกแต่งcss contact */
 body.contact-page {
-    font-family: "Playfair Display", serif;
+    font-family: "Sriracha", serif;
 }
 .row.mt-4 > .col-md-6 {
     padding: 20px;
@@ -322,4 +321,165 @@ ul {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+}
+.contact-section h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.contact-section p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* Card styling */
+.card {
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* General Styles */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+}
+
+.nav-link.active {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+/* Header Styling */
+h2 {
+    font-family: 'Sriracha', cursive;
+    color: #343a40;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Lecturer Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+}
+
+.modal-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.1rem;
+    color: #343a40;
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+.img-fluid {
+    width: 100%; /* ให้ภาพเต็มขนาดของ col-md-4 */
+    height: 250px; /* กำหนดความสูงให้เท่ากัน */
+    object-fit: cover; /* ตัดภาพให้พอดี ไม่บิดเบี้ยว */
+    border-radius: 10px; /* เพิ่มมุมโค้งให้ดูสวย */
 }
