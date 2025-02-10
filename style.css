@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* สำหรับภาพใน Carousel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+/* สำหรับภาพในการ์ด */
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* การตั้งค่าแบบ responsive สำหรับการ์ดใน Album */
+.card-body {
+    padding: 1rem;
+}
+
+/* การตั้งค่าสีพื้นหลังและข้อความสำหรับ Carousel */
+#personalCarousel {
+    background-color: #ffffff;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #ffffff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #646464fd;
+}
+
+/* การตั้งค่าสีพื้นหลังและข้อความสำหรับ Card */
+.card {
+    background-color: #66666685;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(10, 10, 10, 0.1);
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-text {
+    color: #f7f3f3;
+}
+
+/* ปุ่ม */
+.btn-outline-secondary {
+    border-color: #ff5733;
+    color: #ff5733;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #ff5733;
+    color: #fff;
+}
+/* Personal Info Box Image Styling */
+.personal-info-box img {
+    width: 100%; /* Ensure the image scales properly */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove the circular effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Personal Info Row */
+.personal-info-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Personal Info Box */
+.personal-info-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Sriracha", serif;
+}
+
+.personal-info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #080808;
+    border-bottom: 2px solid #ffffff;
+    font-family: "Oswald", serif;
+}
+
+/* สีข้อความใน Navbar */
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #000000;
+}
+
+.navbar-nav .nav-link.active {
+    color: #020202;
+}
+
+/* กรณี responsive */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px;
+    }
+
+    .card img {
+        max-height: 120px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        background-color: #ffffff;
+        border-bottom: none;
+    }
+
+    .navbar-toggler {
+        background-color: #ffffff91;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-color: white;
+    }
+
+    .navbar-collapse.show {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        max-height: 250px;
+    }
+
+    .card-body {
+        padding: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        border: 2px solid #33ccff;
+    }
+}
+/* กรอบและเงาสำหรับ Section */
+.section-container {
+    border: 2px solid #ff5733;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* กรอบรูปภาพ */
+.section-container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* การจัดเรียงข้อความส่วนหัว */
+.section-header {
+    text-align: center;
+    font-family: "Oswald", serif;
+    color: #ca0d0d;
+    margin-bottom: 20px;
+}
+
+/* การตกแต่ง List (ใน About Page) */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    position: relative;
+    font-family: "Sriracha", serif;
+    color: #444444;
+}
+
+/* ใช้ไอคอน "✓" เฉพาะกับ ul li ที่ไม่ใช่ในแถบเมนู */
+ul li::before {
+    content: "✓";
+    color: #ff5733;
+    font-weight: bold;
+    position: absolute;
+    left: -25px;
+    font-size: 20px;
+}
+
+/* ยกเว้นไอคอน "✓" จากแถบเมนู */
+.navbar ul li::before {
+    content: none; /* ปิดการแสดงไอคอน */
+}
+
+/* ฟอร์มใน Contact Page */
+form {
+    border: 2px solid #33ccff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #333333;
+}
+
+form input,
+form textarea {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e64400;
+}
+
+/* ไอคอน "📌" จะใช้เฉพาะใน about.html และ contact.html */
+.about-page h3::before, 
+.contact-page h3::before {
+    content: "📌 ";
+    color: #ff5733;
+}
+
+/* พื้นหลังของ Section */
+.section-container {
+    background: linear-gradient(135deg, #fdfdfd, #f0f0f0);
+}
+/* ตกแต่งcss about */
+body.about-page {
+    font-family: "Sriracha", serif;
+}
+h2,h3 {
+    font-family: "Sriracha", serif;
+    position: relative;
+}
+p{
+    font-family: "Sriracha", serif;
+}
+/* ตกแต่งcss contact */
+body.contact-page {
+    font-family: "Sriracha", serif;
+}
+.row.mt-4 > .col-md-6 {
+    padding: 20px;
+    border-right: 1px solid #ddd; /* Optional: Add a dividing line */
+}
+
+.row.mt-4 > .col-md-6:last-child {
+    border-right: none; /* Remove the line on the last column */
+}
+
+ul {
+    padding-left: 20px; /* Add padding for better list alignment */
+}
+.personal-info-box {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.personal-info-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.collapse p {
+    margin: 10px 0;
+}
+#backToTop {
+    background-color: #606163c7; /* สีฟ้าของ Bootstrap */
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.contact-section h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.contact-section p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* Card styling */
+.card {
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* General Styles */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+}
+
+.nav-link.active {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+/* Header Styling */
+h2 {
+    font-family: 'Sriracha', cursive;
+    color: #343a40;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Lecturer Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+}
+
+.modal-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.1rem;
+    color: #343a40;
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+.img-fluid {
+    width: 100%; /* ให้ภาพเต็มขนาดของ col-md-4 */
+    height: 250px; /* กำหนดความสูงให้เท่ากัน */
+    object-fit: cover; /* ตัดภาพให้พอดี ไม่บิดเบี้ยว */
+    border-radius: 10px; /* เพิ่มมุมโค้งให้ดูสวย */
+}
