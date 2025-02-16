@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMTWebsite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Multimedia Technology</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="details.html">รายละเอียด</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lecturer.html">อาจารย์ประจำสาขา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="activity.html">กิจกรรม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Classroom.html">บรรยากาศห้องเรียน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="university.html">บรรยากาศมหาวิทยาลัย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="learn.html">สมัครเรียน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">ติดต่อ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="personalCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.jpg" class="d-block w-100" alt="Profile Name 1"
+                    style="object-fit: cover; max-height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.jpg" class="d-block w-100" alt="Profile Name 2"
+                    style="object-fit: cover; max-height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="banner3.jpg" class="d-block w-100" alt="Profile Name 3"
+                    style="object-fit: cover; max-height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#personalCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#personalCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- University Atmosphere Section -->
+<div class="container mt-5">
+    <h2 class="text-center">บรรยากาศมหาวิทยาลัย</h2>
+
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="I1.jpg" class="img-fluid gallery-image" alt="บรรยากาศ 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery="gallery1">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="I2.jpg" class="img-fluid gallery-image" alt="บรรยากาศ 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery="gallery2">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="I3.JPG" class="img-fluid gallery-image" alt="บรรยากาศ 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery="gallery3">
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-4 text-center">
+            <img src="I4.JPG" class="img-fluid gallery-image" alt="บรรยากาศ 4" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery="gallery4">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="I5.JPG" class="img-fluid gallery-image" alt="บรรยากาศ 5" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery="gallery5">
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="I6.JPG" class="img-fluid gallery-image" alt="บรรยากาศ 6" data-bs-toggle="modal" data-bs-target="#galleryModal" data-gallery="gallery6">
+        </div>
+    </div>
+</div>
+
+<!-- Modal อัลบั้มรูป -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-transparent">
+            <div class="modal-body text-center p-0">
+                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id="galleryImage1" src="" class="d-block mx-auto img-fluid" alt="Gallery Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="galleryImage2" src="" class="d-block mx-auto img-fluid" alt="Gallery Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="galleryImage3" src="" class="d-block mx-auto img-fluid" alt="Gallery Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Modal อัลบั้มรูป -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-transparent">
+            <div class="modal-body text-center p-0">
+                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id="galleryImage1" src="" class="d-block mx-auto img-fluid" alt="Gallery Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="galleryImage2" src="" class="d-block mx-auto img-fluid" alt="Gallery Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="galleryImage3" src="" class="d-block mx-auto img-fluid" alt="Gallery Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #galleryModal .modal-content {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    #galleryModal .modal-body {
+        padding: 0;
+    }
+
+    #galleryModal .carousel-inner img {
+        max-height: 80vh;
+        width: auto;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1);
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+   document.querySelectorAll('.gallery-image').forEach(item => {
+    item.addEventListener('click', event => {
+        let galleryType = event.target.getAttribute('data-gallery');
+        
+        let images = {
+            "gallery1": ["I1.jpg", "I1.1.jpg", "I1.2.jpg"],
+            "gallery2": ["I2.jpg", "I2.1.jpg", "I2.2.png"],
+            "gallery3": ["I3.JPG", "I3.1.jpg", "I3.2.jpg"],
+            "gallery4": ["I4.JPG", "I4.1.jpg", "I4.2.jpg"],
+            "gallery5": ["I5.JPG", "I5.1.jpg", "I5.2.png"],
+            "gallery6": ["I6.JPG", "I6.1.png", "I6.2.png"]
+        };
+
+        let modalInner = document.querySelector("#galleryCarousel .carousel-inner");
+        modalInner.innerHTML = ""; // ลบรูปเก่าออกก่อน
+
+        images[galleryType].forEach((imgSrc, index) => {
+            let activeClass = index === 0 ? "active" : "";
+            let carouselItem = `
+                <div class="carousel-item ${activeClass}">
+                    <img src="${imgSrc}" class="d-block mx-auto img-fluid" alt="Gallery Image">
+                </div>
+            `;
+            modalInner.innerHTML += carouselItem;
+        });
+
+        // รีเซ็ต Carousel ให้เริ่มที่รูปแรกเสมอ
+        let carousel = new bootstrap.Carousel(document.querySelector("#galleryCarousel"));
+        carousel.to(0);
+    });
+});
+</script>
+
+
+    <!-- Footer Section -->
+<footer class="bg-light text-center py-4" style="margin-top: 50px;">
+    <div class="container">
+        <p>© 2025 Multimedia Technology | All Rights Reserved</p>
+        <p>
+            <a href="index.html" class="text-decoration-none">หน้าหลัก</a> |
+            <a href="details.html" class="text-decoration-none">รายละเอียด</a> |
+            <a href="lecturer.html" class="text-decoration-none">อาจารย์ประจำสาขา</a> |
+            <a href="activity.html" class="text-decoration-none">กิจกรรม</a> |
+            <a href="Classroom.html" class="text-decoration-none">บรรยากาศห้องเรียน</a> |
+            <a href="university.html" class="text-decoration-none">บรรยากาศมหาวิทยาลัย</a> |
+            <a href="learn.html" class="text-decoration-none">สมัครเรียน</a> |
+            <a href="contact.html" class="text-decoration-none">ติดต่อ</a>
+        </p>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top Button -->
+<button id="backToTop" class="btn btn-primary" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000; border-radius: 50%;">
+    ↑
+</button>
+
+<script>
+    // Get the button
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Show or hide the button based on scroll position
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Scroll to top when button is clicked
+    backToTopButton.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
+</body>
+
+</html>
